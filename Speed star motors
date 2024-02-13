@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>...</title>
+</head>
+
+<body>
+    <header role="banner">
+        <h1>WELCOME TO SPEED STAR MOTORS</h1>
+        <p>The best car dealership with the most realiable and affordable cars </p>
+        <p>BELOW IS THE LIST OF CARS WE OFFER</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li>Mazda latest models inclusive of the MX-5 Miata Model.</li>
+            <li>All Toyota Models from 2016 series to the latest models</li>
+            <li>All suzuki models</li>
+            <li>Ford Ranger</li>
+            <li>Mercedes</li>
+        </ul>
+    </nav>
+
+    <article>
+        <section>
+            <p>All cars are covered with a motor plan at the time of purchasing</p>
+        </section>
+    </article>
+
+    <aside>
+        <p></p>
+    </aside>
+
+    <footer>
+        <p>
+            </a>
+        </p>
