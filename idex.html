@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 10%;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        .button {
+            background: #ff4b5c;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #d43f4e;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 500px;
+            margin: auto;
+        }
+        .slides {
+            display: none;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .fade {
+            animation: fadeEffect 3s infinite;
+        }
+        @keyframes fadeEffect {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+        <h1>Will You Be My Valentine? ❤️</h1>
+        <p>You make my world brighter every day. I can't imagine this day without you!</p>
+        
+        <div class="slideshow-container">
+            <img class="slides fade" src="your-image1.jpg" alt="Love Image">
+            <img class="slides fade" src="your-image2.jpg" alt="Love Image">
+            <img class="slides fade" src="your-image3.jpg" alt="Love Image">
+        </div>
+        
+        <button class="button" onclick="showLove()">Yes! 💖</button>
+    </div>
+    
+    <script>
+        function showLove() {
+            alert('Yay! You just made my day! ❤️');
+        }
+        
+        let slideIndex = 0;
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+        showSlides();
+    </script>
+</body>
+</html>
